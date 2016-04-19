@@ -11,7 +11,6 @@ public class Num2WordTest {
   @Test
   public void convertToWord_convertSingleDigitToString_One() {
     Num2Word testNum2Word = new Num2Word();
-    assertEquals("one", testNum2Word.convertToWord("1"));
+    assertEquals("nine", testNum2Word.convertToWord("9"));
   }
-
 }
