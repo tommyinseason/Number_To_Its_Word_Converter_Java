@@ -11,6 +11,12 @@ public class Num2WordTest {
   @Test
   public void convertToWord_convertSingleDigitToString_One() {
     Num2Word testNum2Word = new Num2Word();
-    assertEquals("nine", testNum2Word.convertToWord("9"));
+    assertEquals("nineteen", testNum2Word.convertToWord("18"));
+  }
+
+  @Test
+  public void convertToWord_convert20to99toDigitToString_21() {
+    Num2Word testNum2Word = new Num2Word();
+    assertEquals("twenty one", testNum2Word.convertToWord("21"));
   }
 }

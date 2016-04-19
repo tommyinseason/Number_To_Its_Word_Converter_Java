@@ -28,7 +28,7 @@ public class Num2Word {
     convertNumber.put(8, "eight");
     convertNumber.put(9, "nine");
 
-    HashMap<Integer, String> convertNumberTeens = new HashMap<Integer, String>();
+    // HashMap<Integer, String> convertNumber = new HashMap<Integer, String>();
     convertNumber.put(10, "ten");
     convertNumber.put(11, "eleven");
     convertNumber.put(12, "twelve");
@@ -41,19 +41,27 @@ public class Num2Word {
     convertNumber.put(19, "nineteen");
 
     HashMap<Integer, String> convertNumberTens = new HashMap<Integer, String>();
-    convertNumber.put(20, "twenty");
-    convertNumber.put(30, "thirty");
-    convertNumber.put(40, "forty");
-    convertNumber.put(50, "fifty");
-    convertNumber.put(60, "sixty");
-    convertNumber.put(70, "seventy");
-    convertNumber.put(80, "eighty");
-    convertNumber.put(90, "ninety");
+    convertNumberTens.put(20, "twenty");
+    convertNumberTens.put(30, "thirty");
+    convertNumberTens.put(40, "forty");
+    convertNumberTens.put(50, "fifty");
+    convertNumberTens.put(60, "sixty");
+    convertNumberTens.put(70, "seventy");
+    convertNumberTens.put(80, "eighty");
+    convertNumberTens.put(90, "ninety");
 
 
-    if (inputNumberDigit < 10) {
+    if (inputNumberDigit < 20) {
       finalNum = convertNumber.get(inputNumberDigit);
-    } return finalNum;
+    } else if (inputNumberDigit > 19 && inputNumberDigit < 30) {
+      String almostFinalNum[] = convertNumberTens.get(20);
+      // String test = String.valueOf(inputNumberDigit);
+      // char[] charArrayIntegers = test.toCharArray();
+
+
+    }
+
+    return finalNum;
 
     // HashMap<Integer, String> convertNumberHundreds = new HashMap<Integer, String>();
     // convertNumber.put(100, "hundred");
